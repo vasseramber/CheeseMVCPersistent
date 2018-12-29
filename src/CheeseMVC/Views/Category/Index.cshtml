@@ -1,0 +1,16 @@
+﻿@model IEnumerable<CheeseMVC.Models.CheeseCategory>
+
+<h2>Index</h2>
+
+<ul>
+
+    @foreach(CheeseMVC.Models.CheeseCategory category in Model)
+    {
+        // pull out name in list
+        <li>@category.Name</li>
+        // print each name of each category 
+    }
+
+</ul>
+
+<p><a asp-controller="Category" asp-action="Add">Add Category</a></p>
